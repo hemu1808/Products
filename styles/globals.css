@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+/* Custom global styles */
+body {
+  font-family: 'Baskervville SC', serif;
+  font-weight: 400;
+  font-style: oblique;
+  background-color: #ffffff; /* Light background */
+  margin: 0;
+  padding: 0;
+  color: #1a202c;
+}
+
+/* Header styling */
+h1, h2, h3, h4 {
+  color: #586e8a;
+}
+
+a {
+  color: #89b7c9; /* Primary link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #528fc9; /* Hover effect for links */
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #51a8da; /* Primary button background */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 10px rgba(66, 153, 225, 0.3);
+}
+
+button:hover {
+  background-color: #3182ce; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:active {
+  background-color: #2b6cb0;
+  transform: scale(0.95); /* Shrink on click */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4299e1; /* Highlighted border */
+  box-shadow: 0 0 5px rgba(66, 153, 225, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.bg-primary {
+  background-color: #40679b; /* Consistent primary blue */
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #42e191, #31ce72);
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop-in {
+  animation: pop 0.5s ease-in-out;
+}
+
+
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.popup {
+  animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+button {
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+h1, h2, h3, button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+/* Add this to your global stylesheet */
+.product-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.cart-icon {
+  height: 24px;
+  width: 24px;
+}
