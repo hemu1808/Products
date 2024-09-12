@@ -1,3 +1,36 @@
+# E-Commerce Product Catalog
+
+## Overview
+
+This project is a fully functional e-commerce product catalog application built with Next.js and Tailwind CSS. It includes features such as product listing, product detail view, shopping cart, checkout process, and an admin panel for managing products. The backend is powered by Node.js and Express, handling CRUD operations via a RESTful API.
+
+## Features
+
+- **Product Listing Page:** Displays products with images, names, prices, and descriptions. Includes filters and sorting options.
+- **Product Detail Page:** Provides detailed information about each product with an "Add to Cart" button.
+- **Shopping Cart:** Allows users to view and manage items in their cart, including updating quantities and removing items.
+- **Checkout Process:** Simulates a checkout with form validation for shipping details.
+- **Admin Panel:** Interface for adding, updating, or deleting products.
+
+## Technologies Used
+
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend:** Node.js, Express
+- **Database (optional):** SQLite, MongoDB, or any other database for persistent storage
+
+## Setup
+
+### Prerequisites
+
+- Node.js and npm installed
+- A code editor (e.g., VS Code)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/e-commerce-product-catalog.git
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
